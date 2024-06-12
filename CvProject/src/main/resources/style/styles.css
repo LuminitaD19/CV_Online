@@ -1,0 +1,329 @@
+.myClass {
+    color: green;
+    align: center;
+}
+
+body.userBookings {
+    background-image: url('/images/myBookings.jpg');
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+img.index{
+    width:840px;
+    height:600px;
+}
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(240,248,255);
+}
+table.contact
+{
+    margin-left: 600px;
+    margin-top: 320px;
+    background-color:rgba(178,255,102);
+}
+
+li a {
+    float: left;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #66CC00;
+}
+
+li a:hover {
+    background-color: #E5FFCC;
+}
+
+.myCenter {
+    border: 0px outset white;
+    color: blue;
+    text-align: center;
+}
+
+.myLeft {
+    border: 0px outset black;
+    color: green;
+    text-align: left;
+}
+.column {
+    float: left;
+    width: 45%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.columnUserBooking {
+    float: left;
+    width: 13%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: left;
+    background-color: #469c4c;
+    color: white;
+}
+
+.about-section2 {
+    padding: 20px;
+    text-align: left;
+    margin-right: 800px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+
+/********************************* General *******************************/
+ulMain {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/************** Footer *****************/
+
+ulFooter {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #46D750;
+    color: white;
+}
+
+footer .copyright {
+    background: #469c4c;
+    border-top: 2px solid #1e2730;
+    padding: 0 16px;
+    color: white;
+}
+
+#contentRow{
+    width: 1450px;
+    display: block;
+    height: auto;
+}
+#contentRowGallery{
+    width: 1900px;
+    display: block;
+    height: auto;
+}
+#contentRowGallery2{
+    width: 1900px;
+    display: block;
+    height: auto;
+}
+#hrefContent1 > img{
+    width: 800px;
+    height: 500px;
+    margin: 10px 35px;
+}
+#hrefContent2 > img{
+    width: 800px;
+    height: 500px;
+    margin: 10px 215px;
+}
+#hrefContent3 {
+    margin: 10px 35px;
+}
+#hrefContent4 {
+    margin: 10px 215px;
+}
+#contentColumn1{
+    width: 600px;
+    display: block;
+    height: auto;
+}
+#contentColumn1 > img{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px 8px;
+}
+#contentColumn1 > p{
+    width: 520px;
+    margin: 5px 8px;
+}
+#contentColumn1 > h2{
+    margin-left: 5px;
+    font-weight: bold;
+    width: 580px;
+}
+#contentColumn2{
+    width: 600px;
+    display: block;
+    height: auto;
+}
+#contentColumn2 > img{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px 8px;
+}
+#contentColumn2 > p{
+    width: 520px;
+    margin: 5px 8px;
+}
+#contentColumn2 > h2{
+    margin-left: 5px;
+    font-weight: bold;
+    width: 580px;
+}
+#contentColumn3{
+    width: 600px;
+    display: block;
+    height: auto;
+}
+#contentColumn3 > img{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px 8px;
+}
+#contentColumn3 > p{
+    width: 520px;
+    margin: 5px 8px;
+}
+#contentColumn3 > h2{
+    margin-left: 5px;
+    font-weight: bold;
+    width: 580px;
+}
+
+#contentColumn4{
+    width: 600px;
+    display: block;
+    height: auto;
+}
+#contentColumn4 > img{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px 8px;
+}
+#contentColumn4 > p{
+    width: 520px;
+    margin: 5px 8px;
+}
+#contentColumn4 > h2{
+    margin-left: 5px;
+    font-weight: bold;
+    width: 580px;
+}
+
+#contentColumn5{
+    width: 600px;
+    display: block;
+    height: auto;
+}
+#contentColumn5 > img{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px 8px;
+}
+#contentColumn5 > p{
+    width: 520px;
+    margin: 5px 8px;
+}
+#contentColumn5 > h2{
+    margin-left: 5px;
+    font-weight: bold;
+    width: 580px;
+}
+
+#contentColumn6{
+    width: 600px;
+    display: block;
+    height: auto;
+}
+#contentColumn6 > img{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px 8px;
+}
+#contentColumn6 > p{
+    width: 520px;
+    margin: 5px 8px;
+}
+#contentColumn6 > h2{
+    margin-left: 5px;
+    font-weight: bold;
+    width: 580px;
+}
+#contentColumn7{
+    width: 600px;
+    display: block;
+    height: auto;
+}
+#contentColumn7 > img{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px 8px;
+}
+#contentColumn7 > p{
+    width: 520px;
+    margin: 5px 8px;
+}
+#contentColumn7 > h2{
+    margin-left: 5px;
+    font-weight: bold;
+    width: 580px;
+}
+#contentColumn8{
+    width: 600px;
+    display: block;
+    height: auto;
+}
+#contentColumn8 > img{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 5px 8px;
+}
+#contentColumn8 > p{
+    width: 520px;
+    margin: 5px 8px;
+}
+#contentColumn8 > h2{
+    margin-left: 5px;
+    font-weight: bold;
+    width: 580px;
+}

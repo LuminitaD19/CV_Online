@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link href="../style/styles.css" th:href="@{/styles/styles.css}" rel="stylesheet" />
+        <title>Database administration</title>
+    </head>
+    <body>
+        <ul>
+            <a href="/templates/profile.html" th:href="@{/profile}"> Profile</a>
+            <a  href="/templates/keySkills.html"     th:href="@{/keySkills}"> Key Skills</a>
+            <a  href="/templates/employmentHistory.html"     th:href="@{/employmentHistory}"> Employment History</a>
+            <a  href="/templates/education.html"     th:href="@{/education}"> Education/Training History</a>
+            <a  href="/templates/volunteering.html"     th:href="@{/volunteering}"> Volunteering</a>
+            <a  href="/templates/knowledge.html"     th:href="@{/knowledge}"> Knowledge</a>
+            <a  href="/templates/contact_form.html"     th:href="@{/contact}"> Contact</a>
+        </ul>
+        <form action="#" th:action="@{'/submitAdmin'}" method="post">
+            <table>
+                <tr >
+                    <td><b>Admin:&nbsp;</b></td>
+                    <td><input type="text" name="user" size="60"/>  </td>
+                </tr>
+                <tr >
+                    <td><b>Password:&nbsp;</b></td>
+                    <td><input type="password" name="password"  size="60"/> </td>
+                </tr>
+                <tr >
+                    <td> <input type="reset" value="  Reset  "> </td>
+                    <td> <input type="submit" value="  Login  "> </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

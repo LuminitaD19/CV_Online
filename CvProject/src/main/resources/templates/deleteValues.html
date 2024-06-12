@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Get Values of Selected Checboxes</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+  <ul>
+    <a href="/templates/profile.html" th:href="@{/profile}"> Profile</a>
+    <a  href="/templates/keySkills.html"     th:href="@{/keySkills}"> Key Skills</a>
+    <a  href="/templates/employmentHistory.html"     th:href="@{/employmentHistory}"> Employment History</a>
+    <a  href="/templates/education.html"     th:href="@{/education}"> Education/Training History</a>
+    <a  href="/templates/volunteering.html"     th:href="@{/volunteering}"> Volunteering</a>
+    <a  href="/templates/knowledge.html"     th:href="@{/knowledge}"> Knowledge</a>
+    <a  href="/templates/contact_form.html"     th:href="@{/contact}"> Contact</a>
+    <a  href="/templates/admin.html"     th:href="@{/admin}"> Admin</a>
+  </ul>
+
+  <div th:if="${#lists.isEmpty(myProfileList)}">
+    <b>No profile to delete</b>
+  </div>
+  <form action="#" th:action="@{'/deleteProfile'}" method="post">
+    <table th:each="profile: ${myProfileList}">
+      <tr>
+        [[${profile.profileId}]] [[${profile.profileDescription}]]
+        <input type="checkbox" name="profileId" th:value="${profile.profileId}" >
+      </tr>
+    </table>
+          <input type="Submit" value="  Delete  ">
+  </form>
+
+  <div th:if="${#lists.isEmpty(mySkillList)}">
+    <b>No skill to delete</b>
+  </div>
+  <form action="#" th:action="@{'/deleteSkill'}" method="post">
+    <table th:each="skill: ${mySkillsList}">
+      <tr>
+        [[${skill.skillId}]] [[${skill.skillDescription}]]
+        <input type="checkbox" name="skillId" th:value="${skill.skillId}" >
+      </tr>
+    </table>
+    <input type="Submit" value="  Delete  ">
+  </form>
+
+
+  </body>
+</html>

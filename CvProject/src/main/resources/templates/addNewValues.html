@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <ul>
+            <a href="/templates/profile.html" th:href="@{/profile}"> Profile</a>
+            <a  href="/templates/keySkills.html"     th:href="@{/keySkills}"> Key Skills</a>
+            <a  href="/templates/employmentHistory.html"     th:href="@{/employmentHistory}"> Employment History</a>
+            <a  href="/templates/education.html"     th:href="@{/education}"> Education/Training History</a>
+            <a  href="/templates/volunteering.html"     th:href="@{/volunteering}"> Volunteering</a>
+            <a  href="/templates/knowledge.html"     th:href="@{/knowledge}"> Knowledge</a>
+            <a  href="/templates/contact_form.html"     th:href="@{/contact}"> Contact</a>
+        </ul>
+        <p> Please insert the information for a new profile</p>
+        <form action="#" th:action="@{'/addNewProfile'}" method="post">
+            <table>
+                <tr>
+                    <input type="text" name="profileDescription" >
+                </tr>
+            </table>
+            <input type="Reset" value="  Reset  ">
+            <input type="Submit" value="  ADD  ">
+        </form>
+        <p> Please insert the information for a new skill</p>
+        <form action="#" th:action="@{'/addNewSkill'}" method="post">
+            <table>
+                <tr>
+                    <input type="text" name="skillDescription" >
+                </tr>
+            </table>
+            <input type="Reset" value="  Reset  ">
+            <input type="Submit" value="  ADD  ">
+        </form>
+
+        <p> Please insert the information for a new knowledge</p>
+        <form action="#" th:action="@{'/addNewKnowledge'}" method="post">
+            <table>
+                <tr>
+                    <input type="text" name="knowledgeName" >
+                </tr>
+            </table>
+            <input type="Reset" value="  Reset  ">
+            <input type="Submit" value="  ADD  ">
+        </form>
+
+        <p> Please insert the information for a new volunteering</p>
+        <form action="#" th:action="@{'/addNewVolunteering'}" method="post">
+            <table>
+                <tr>
+                    <input type="text" name="volunteeringName" >
+                    <input type="text" name="volunteeringDetails" >
+                    <input type="text" name="volunteeringYear" >
+                </tr>
+            </table>
+            <input type="Reset" value="  Reset  ">
+            <input type="Submit" value="  ADD  ">
+        </form>
+
+        <p> Please insert the information for a new education</p>
+        <form action="#" th:action="@{'/addNewEducation'}" method="post">
+            <table>
+                <tr>
+                    <input type="text" name="certification" >
+                    <input type="text" name="educationName" >
+                </tr>
+            </table>
+            <input type="Reset" value="  Reset  ">
+            <input type="Submit" value="  ADD  ">
+        </form>
+        <p> Please insert the information for a new employment</p>
+        <form action="#" th:action="@{'/addNewEmployer'}" method="post">
+            <table>
+                <tr>
+                    tasks <input type="text" name="tasks" >
+                    usedTools <input type="text" name="usedTools" >
+                    startDate <input type="date" name="startDate">
+                    endDate <input type="date" name="endDate">
+                    nameEmployment <input type="text" name="nameEmployment">
+                    position <input type="text" name="position">
+
+                </tr>
+            </table>
+            <input type="Reset" value="  Reset  ">
+            <input type="Submit" value="  ADD  ">
+        </form>
+
+
+    </body>
+</html>

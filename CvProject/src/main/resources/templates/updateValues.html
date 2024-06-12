@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+    <ul>
+        <a href="/templates/profile.html" th:href="@{/profile}"> Profile</a>
+        <a  href="/templates/keySkills.html"     th:href="@{/keySkills}"> Key Skills</a>
+        <a  href="/templates/employmentHistory.html"     th:href="@{/employmentHistory}"> Employment History</a>
+        <a  href="/templates/education.html"     th:href="@{/education}"> Education/Training History</a>
+        <a  href="/templates/volunteering.html"     th:href="@{/volunteering}"> Volunteering</a>
+        <a  href="/templates/knowledge.html"     th:href="@{/knowledge}"> Knowledge</a>
+        <a  href="/templates/contact_form.html"     th:href="@{/contact}"> Contact</a>
+        <a  href="/templates/admin.html"     th:href="@{/admin}"> Admin</a>
+    </ul>
+
+    <div th:if="${#lists.isEmpty(myProfileList)}">
+        <b>111111111111111111111111111</b>
+    </div>
+    <form action="#" th:action="@{'/updateProfile'}" method="post">
+        <table th:each="profile: ${myProfileList}">
+            <tr>
+                [[${profile.profileId}]] [[${profile.profileDescription}]]
+                <input type="checkbox" name="profileId" th:value="${profile.profileId}" >
+            </tr>
+        </table>
+        <input type="Submit" value="  Select item  ">
+    </form>
+    </body>
+</html>

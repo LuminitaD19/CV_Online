@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link href="../style/styles.css" th:href="@{/styles/styles.css}" rel="stylesheet" />
+        <title>CvProject - Contact</title>
+    </head>
+    <body class="contact">
+        <ul>
+            <a href="/templates/profile.html" th:href="@{/profile}"> Profile</a>
+            <a  href="/templates/keySkills.html"     th:href="@{/keySkills}"> Key Skills</a>
+            <a  href="/templates/employmentHistory.html"     th:href="@{/employmentHistory}"> Employment History</a>
+            <a  href="/templates/education.html"     th:href="@{/education}"> Education/Training History</a>
+            <a  href="/templates/volunteering.html"     th:href="@{/volunteering}"> Volunteering</a>
+            <a  href="/templates/knowledge.html"     th:href="@{/knowledge}"> Knowledge</a>
+            <a  href="/templates/contact_form.html"     th:href="@{/contact}"> Contact</a>
+            <a  href="/templates/admin.html"     th:href="@{/admin}"> Admin</a>
+        </ul>
+
+        <form action="#" th:action="@{'/submitContact'}" method="post">
+            <table border="0" class="contact">
+                <tr >
+                    <td><b>First name:&nbsp;</b></td>
+                    <td><input type="text" name="name" size="60"/>  </td>
+                </tr>
+                <tr >
+                    <td><b>Last name:&nbsp;</b></td>
+                    <td><input type="text" name="lastName"  size="60"/> </td>
+                </tr>
+                <tr >
+                    <td><b>Email:</b></td>
+                    <td><input type="email" name="email"  size="60"/> </td>
+                </tr>
+                <tr >
+                    <td><b>Subject:&nbsp;</b></td>
+                    <td><input type="text" name="subject"  size="60"/> </td>
+                </tr>
+                <tr >
+                    <td><b> Message:</b></td>
+                    <td><textarea name="content" cols="60" rows="20" wrap="off"> </textarea> </td>
+                </tr>
+                <tr >
+                    <td> <input type="reset" value="  Reset  "> </td>
+                    <td> <input type="submit" value="  Send  "> </td>
+                </tr>
+            </table>
+
+        </form>
+
+    </body>
+</html>
